@@ -1,11 +1,14 @@
 {
   "name": "@upspark-platform/engine",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "upspark platform engine",
   "main": "index.js",
   "scripts": {
+    "prepare": "npm run build",
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "files": ["lib/**/*"],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/upspark-platform/engine.git"
@@ -16,7 +19,10 @@
     "url": "https://github.com/upspark-platform/engine/issues"
   },
   "publishConfig": {
-    "registry":"https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com"
   },
-  "homepage": "https://github.com/upspark-team/engine#readme"
+  "homepage": "https://github.com/upspark-team/engine#readme",
+  "devDependencies": {
+    "typescript": "^4.1.3"
+  }
 }
