@@ -1,6 +1,6 @@
 {
   "name": "@upspark-platform/engine",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "upspark platform engine",
   "main": "lib/index.js",
   "scripts": {
