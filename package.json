@@ -1,0 +1,22 @@
+{
+  "name": "@upspark-platform/engine",
+  "version": "0.0.1",
+  "description": "upspark platform engine",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/upspark-platform/engine.git"
+  },
+  "author": "@upspark-platform",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/upspark-platform/engine/issues"
+  },
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com"
+  },
+  "homepage": "https://github.com/upspark-team/engine#readme"
+}
