@@ -2,7 +2,7 @@
   "name": "@upspark-platform/engine",
   "version": "0.0.4",
   "description": "upspark platform engine",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "prepare": "npm run build",
     "build": "tsc",
