@@ -141,7 +141,7 @@ export async function load(root, entry) {
             ]
         },
         optimization: {
-            minimize: false,
+            minimize: true,
         },
     };
 
@@ -179,5 +179,21 @@ export async function load(root, entry) {
     vm.createContext(context);
     vm.runInNewContext( `${code}`, context);
 
-    console.log(context);
+    console.log(context["runtime"].text());
 }
+
+
+// step 1: set "root" directory
+// step 2: add modules
+// step 3: load
+        // - root directory is tree-crawled: ignore: node_modules
+        //      - js, ts, JSON files are written to memory fs
+        // - modules are written to memory fs
+    // returns Promise<{
+    //      context,
+    //      taskList: returns all task
+    //      task("...")
+    // }>
+    // task("...") fetches a context by name
+    // - exposes .run() which executes w/ vargs and return an execution handle
+    // - exposes .info() which returns name in various formats and function arguments
